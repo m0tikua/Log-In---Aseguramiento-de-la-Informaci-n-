@@ -1,0 +1,111 @@
+/* Fuente y reset básico */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #d08ab1, #5a7bdc);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal */
+.login-container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    text-align: center;
+    position: relative;
+}
+
+/* Avatar */
+.avatar {
+    background-color: #0e2a47;
+    color: white;
+    font-size: 36px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -70px auto 20px auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Título */
+.login-container h2 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: normal;
+}
+
+/* Grupos de entrada */
+.input-group {
+    background: rgba(0, 0, 0, 0.1);
+    margin: 15px 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.input-group i {
+    color: white;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Opciones: recordar y olvidar */
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    margin: 10px 0 20px;
+}
+
+.options a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+/* Botón de login */
+button[type="submit"] {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
