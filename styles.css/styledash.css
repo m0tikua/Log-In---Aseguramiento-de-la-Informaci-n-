@@ -1,0 +1,66 @@
+/* Fondo general con degradado */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #d16ba5, #8ec5fc);
+}
+
+/* Contenedor principal (card) */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 40px;
+    width: 90%;
+    max-width: 900px;
+    text-align: center;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Título */
+.card h1 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    color: #fff;
+}
+
+/* Encabezados */
+th {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Celdas */
+td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+/* Filas alternas */
+tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Hover sobre filas */
+tr:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transition: background 0.2s ease-in-out;
+}
+
